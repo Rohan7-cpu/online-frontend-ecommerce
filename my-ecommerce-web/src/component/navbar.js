@@ -15,8 +15,9 @@ export default function Navbar() {
         </Link>
         <span>Shopease</span>
       </div>
-
+      
       <ul className="navbar-buttons">
+        <li><Link to ="/wishlist">Your Wishlist</Link></li>
         <li className="cart-design" style={{ position: "relative" }}>
           <Link to="/cart">Your Cart</Link>
           {cart.length > 0 && (

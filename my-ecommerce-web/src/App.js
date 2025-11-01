@@ -10,6 +10,7 @@ import Womenproduct from "./component/womenproduct";
 import Kidsproduct from "./component/kidsproduct";
 import Cart from "./component/cart";
 import CartProvider from "./component/cartcontext";
+import Wishlistpage from "./component/wishlist";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/womens" element={<Womenproduct />} />
         <Route path="/kids" element={<Kidsproduct />} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/wishlist" element={<Wishlistpage/>} />
     
       </Routes>
     </Router>
