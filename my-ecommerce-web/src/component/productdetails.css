@@ -1,0 +1,30 @@
+.product-details {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  align-items: flex-start;
+}
+
+.details-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details-info {
+  max-width: 600px;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
