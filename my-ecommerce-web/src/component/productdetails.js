@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { CartContext } from "./cartcontext";
 import axios from "axios";
 import "./productdetails.css";
+import { WishlistContext } from "./wishlistcontext";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ export default function ProductDetails() {
   const [error, setError] = useState("");
   const { addToCart } = useContext(CartContext);
   const navigate = useNavigate();
+  const {addToWishlist}=useContext(WishlistContext);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -47,6 +49,7 @@ export default function ProductDetails() {
         <button className="add-btn" onClick={handleAddToCart}>
           Add to Cart
         </button>
+        <button className="add-wish"onClick={()=>addToWishlist(product)}>Add To Wishlist</button>
       </div>
     </div>
   );

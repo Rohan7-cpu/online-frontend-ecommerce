@@ -1,0 +1,78 @@
+.footer {
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  padding: 50px 0 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.footer-brand h2 {
+  color: #ffb703;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  color: #ffb703;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffb703;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social .social-icons a {
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #ffb703;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaa;
+}

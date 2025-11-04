@@ -2,6 +2,7 @@ import React from "react";
 import { useState,useEffect } from "react";
 import"./womenproduct.css"
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Womenproduct(){
     const[products ,setProducts] =useState([]);
@@ -34,6 +35,7 @@ export default function Womenproduct(){
             <h3 className="prod-title">{product.title}</h3>
             <p className="prod-desc">{product.description}</p>
             <p className="prod-price">Rs{product.price}</p>
+            <Link to={`/women-product/${product.id}`}>view details</Link>
                 </div>
           ))
           }
