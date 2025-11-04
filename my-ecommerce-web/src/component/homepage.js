@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./homepage.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Banner from "./banner";
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
@@ -26,6 +27,7 @@ export default function HomePage() {
 
   return (
     <div className="product-container">
+      <Banner/>
       {products.map((product) => (
         <div key={product.id} className="product-card">
           <img src={product.image ||`https://picsum.photos/200?random=${product.id}`}

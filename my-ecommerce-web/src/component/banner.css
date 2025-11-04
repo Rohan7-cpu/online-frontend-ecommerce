@@ -1,0 +1,45 @@
+.banner-slider {
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(300px * 12); /* depends on number of slides */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for left-to-right movement */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
